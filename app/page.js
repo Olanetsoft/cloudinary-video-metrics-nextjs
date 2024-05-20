@@ -2,6 +2,7 @@
 "use client";
 import { CldVideoPlayer } from "next-cloudinary";
 import "next-cloudinary/dist/cld-video-player.css";
+import VideoAnalyticsData from "../components/VideoAnalyticsData";
 
 export default function Home() {
   return (
@@ -20,9 +21,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full md:w-1/2 p-4">
-            <p className="text-lg font-semibold text-gray-700 text-center text-red-500">
-              Add video analytics data here
-            </p>
+            <VideoAnalyticsData />
           </div>
         </div>
       </section>
